@@ -14,9 +14,9 @@ export default function About() {
         </div>
         <div className="about-col">
           <Image
-            src="/img/about.png"
+            src="/about.png"
             width={'500'}
-            height={'345'}
+            height={'350'}
             alt="About Picture"
           />
          
