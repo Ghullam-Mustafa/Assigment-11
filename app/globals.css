@@ -19,7 +19,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(#517e86c4, #949fdf1a), 
-  url(/banner1.png);
+  url(../public/banner1.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -545,7 +545,7 @@ hr {
 }
 
 .blog-left img {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 20px;
 }
 
