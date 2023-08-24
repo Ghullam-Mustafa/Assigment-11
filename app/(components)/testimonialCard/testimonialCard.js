@@ -1,9 +1,9 @@
-
+import Image from "next/image"
 
 export default function testimonialCard(props) {
   return (
     <div className="testimonials-col">
-    <img src={props.src} alt="oo.."/>
+    <Image src={props.src} width={500} height={500} alt="oo.."/>
     <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
             praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a

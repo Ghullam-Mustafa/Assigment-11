@@ -3,7 +3,7 @@ import FasilitiesCard from "./(components)/facilitiesCard/facilitiesCard"
 import Imeges from "./(components)/imegesCard/imegesCard"
 import TestimonialCard from "./(components)/testimonialCard/testimonialCard"
 import Card from "./(components)/card/card"
-
+// import Image from "next/image"
 function Home() {
     return (
         <>
@@ -47,9 +47,9 @@ function Home() {
 
                 <div className="row">
 
-                    <Imeges heading="DELHI" src="img/Campus1.png" >  </Imeges>
-                    <Imeges heading="HYDERABAD" src="img/Campus2.png" >  </Imeges>
-                    <Imeges heading="MUMBAI" src="img/Campus3.png" >  </Imeges>
+                    <Imeges heading="DELHI" src="/Campus1.png"  />  
+                    <Imeges heading="HYDERABAD" src="/Campus2.png" />  
+                    <Imeges heading="MUMBAI" src="/Campus3.png" />  
                 </div>
             </section>
 
@@ -62,9 +62,9 @@ function Home() {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
                 <div className="row">
-                    <FasilitiesCard src="img/Libary.png" heading="Best Libary" />
-                    <FasilitiesCard src="img/playground.png" heading="Athletics" />
-                    <FasilitiesCard src="img/food.png" heading="Tasty and Healthy Food" />
+                    <FasilitiesCard src="/libary.png"   heading="Best Libary"/> 
+                    <FasilitiesCard src="/playground.png" heading="Athletics" />
+                    <FasilitiesCard src="/food.png" heading="Tasty and Healthy Food" />
                 </div>
             </section>
 
@@ -77,14 +77,14 @@ function Home() {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
                 <div className="row">
-                    <TestimonialCard src="img/user.png" />
-                    <TestimonialCard src="img/user.png" />
+                    <TestimonialCard src="/user.png" />
+                    <TestimonialCard src="/user.png" />
 
                 </div>
 
                 <section className="cta">
                     <h1>GET READY FOR A BRIGHT FUTURE</h1>
-                    <a href="contact.html" className="hero_btn">CONTACT US</a>
+                    <a  className="hero_btn">CONTACT US</a>
                 </section>
             </section>
         </>

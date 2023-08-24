@@ -8,7 +8,7 @@
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
-  url('../public/img/banner.png');
+  url('../public/banner.png');
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -19,7 +19,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(#517e86c4, #949fdf1a), 
-  url(../public/img/banner1.png);
+  url(../public/banner1.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -276,7 +276,7 @@ p {
 }
 
 .campus-col img {
-  width: 100%;
+  /* width: 100%; */
   display: block;
 }
 
@@ -332,7 +332,7 @@ p {
 }
 
 .facilities-col img {
-  width: 100%;
+  /* width: 100%; */
   transition: 0.5s;
   border-radius: 10px;
 }
@@ -409,7 +409,7 @@ p {
   margin: 100px auto;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-   url(../public/img/back1.png);
+   url(../public/back1.png);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -485,7 +485,7 @@ hr {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
-  url('../public/img/banner.png');
+  url('../public/banner.png');
   background-position: center;
   background-size: cover;
   text-align: center;
