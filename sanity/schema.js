@@ -1,7 +1,10 @@
+// import blockContent from './schemas/blockContent'
+// import category from './schemas/category'
+// import post from './schemas/post'
+// import author from './schemas/author'
 
-import category from './schemas/category'
-
+import majorPrograms from "./schemas/majorPrograms";
 
 export const schema = {
-  types: [  category, ],
+  types: [majorPrograms],
 }

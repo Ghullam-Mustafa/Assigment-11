@@ -3,8 +3,17 @@ import FasilitiesCard from "./(components)/facilitiesCard/facilitiesCard"
 import Imeges from "./(components)/imegesCard/imegesCard"
 import TestimonialCard from "./(components)/testimonialCard/testimonialCard"
 import Card from "./(components)/card/card"
+import { client } from "@/sanity/lib/client"
+
+
+const fetchServices = async ()=> {
+    const majorPrograms = await client.fetch(`*[_type == "majorPrograms"]`,{},{cache:'no-cache',});
+    return majorPrograms
+}
+
 // import Image from "next/image"
-function Home() {
+async function Home() {
+   const majorPrograms = await fetchServices();
     return (
         <>
             <section className="header">
@@ -30,9 +39,17 @@ function Home() {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
                 <div className="row">
-                    <Card heading="Undergraduate Programs" />
-                    {/* <Card heading="Graduate Programs" /> */}
-                    <Card heading="Adult Learning & Degree Completion" />
+                    {
+                        majorPrograms.map((majorProgram)=>{
+                            return(
+                                <Card heading={majorProgram.title} description={majorProgram.description} />
+
+                            )
+                        })
+                    }
+                    {/* <Card heading="Undergraduate Programs" />
+                
+                    <Card heading="Adult Learning & Degree Completion" /> */}
                 </div>
             </section>
 
